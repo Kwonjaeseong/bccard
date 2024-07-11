@@ -628,6 +628,11 @@
   font-size: 12px;
 }
 
+.footernotice .btncenter>a:hover,
+.footernotice .btncenter>a:active {
+  text-decoration: none;
+}
+
 .footernotice .btncenter>a {
   width: 160px;
   height: 30px;
@@ -636,6 +641,11 @@
   background: url(/images/bg_select.png) left top no-repeat;
   display: block;
 }
+
+.footernotice .btncenter>a:hover {
+  background-position: left bottom;
+}
+
 
 .footernotice .btncenter ul {
   padding: 2px 0 5px;
@@ -658,11 +668,22 @@
   display: block;
 }
 
+.footernotice .btncenter ul li a:hover,
+.footernotice .btncenter ul li a:focus {
+  background: #f2f2f2;
+  text-decoration: none;
+}
+
+
 .footernotice .btnfamily {
   position: relative;
   position: absolute;
   top: 23px;
   right: 10px;
+}
+
+.footernotice .btnfamily a:hover {
+  text-decoration: none;
 }
 
 .footernotice .btnfamily>a {
@@ -677,6 +698,11 @@
   display: block;
 }
 
+.footernotice .btnfamily>a:hover {
+  background-position: left bottom;
+}
+
+
 .footernotice .contentfamily {
   width: 928px;
   padding: 15px 15px 14px;
@@ -690,6 +716,12 @@
   overflow: hidden;
   z-index: 200;
   display: none;
+}
+
+.footernotice .contentfamily a:hover,
+.footernotice .contentfamily a:focus {
+  color: #e83d44;
+  text-decoration: underline;
 }
 
 .footernotice .contentfamily a {
