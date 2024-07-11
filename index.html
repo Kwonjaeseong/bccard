@@ -225,7 +225,7 @@
             <a href="#">공지사항</a>
           </h3>
           <div class="newsslider">
-            <ul class="slides">
+            <ul class="slides2">
               <li>
                 <a href="#" class="textBlock">소득공제 확인서 변경사항 안내<span class="date">2024.07.09</span></a>
               </li>
@@ -262,6 +262,40 @@
         $(".menu_bg").stop().slideToggle();
       });
     });
+
+
+    // slide2 script 방식
+    // $(document).ready(function () {
+    //   var nowNum = 0;
+    //   var bannerObj = $('.slidess li');
+    //   var maxLength = bannerObj.length;
+    //   var timer = 4000; // 자동 롤링되는 타임 설정
+    //   var autoRun = setInterval(function () { rollingFn('left'); }, timer);
+    //   bannerObj.eq(nowNum).fadeIn();
+    //   // $('.nextBtn').bind('click', function () {
+    //   //   rollingFn('right');
+    //   // });
+    //   // $('.prevBtn').bind('click', function () {
+    //   //   rollingFn('left');
+    //   // });
+
+    //   function rollingFn(direction) {
+    //     if (direction == 'left') {
+    //       nowNum = nowNum + 1;
+    //       if (nowNum > maxLength - 1) {
+    //         nowNum = 0;
+    //       }
+    //     } else {
+    //       nowNum = nowNum - 1;
+    //       if (nowNum < 0) {
+    //         nowNum = maxLength - 1;
+    //       }
+    //     }
+    //     bannerObj.hide().eq(nowNum).fadeIn();
+    //   }
+    // });
+
+
 
 
   </script>

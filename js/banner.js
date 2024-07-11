@@ -11,9 +11,9 @@ function timer() {
 }
 
 function slide() {
-  $(".slides").animate({ left: "-100%" }, 1000, function () {
-    $(this).append($("li").eq(0));
-    $(".slides").css({ left: 0 });
+  $(".slides2").animate({ left: "-100%" }, 1000, function () {
+    $(".slides2").css({ left: 0 });
+    $(this).append($(".slides2 > li").eq(0));
   });
   current++;
   if (current == 2) current = 0;
