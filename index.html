@@ -4,6 +4,283 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BC card</title>
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="fonts/font.css" />
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="top">
+          <div class="logo">
+            <a href=""><img src="/images/h1_logo_individual.gif" alt="" /></a>
+          </div>
+          <ul class="top_menu">
+            <li><a href="#" class="top_bar">가맹점</a></li>
+            <li><a href="#">기업</a></li>
+            <li><a href="#">VIP</a></li>
+          </ul>
+          <ul class="login_menu">
+            <li><a href="#" class="log_col">로그인</a></li>
+            <li><a href="#">회원가입</a></li>
+            <li><a href="#">공동(공인)인증센터</a></li>
+            <li><a href="#">상품공시실</a></li>
+            <li><a href="#">고객센터</a></li>
+            <li><a href="#">전체보기</a></li>
+          </ul>
+        </div>
+        <span class="line"></span>
+        <div class="bottom">
+          <ul class="gnb">
+            <li>
+              <a href="#" class="bottom_my">마이BC</a>
+              <ul class="sub">
+                <li><a href="#">한눈에보기</a></li>
+                <li><a href="#">카드이용조회</a></li>
+                <li><a href="#">카드정보</a></li>
+                <li><a href="#">나의정보관리</a></li>
+                <li><a href="#">가족카드이용조회</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">이벤트/혜택</a>
+              <ul class="sub">
+                <li><a href="#">이벤트</a></li>
+                <li><a href="#">혜택</a></li>
+                <li><a href="#">포인트/마일리지</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">카드상품</a>
+              <ul class="sub">
+                <li><a href="#">카드발급신청/조회</a></li>
+                <li><a href="#">맞춤카드찾기</a></li>
+                <li><a href="#">신용카드</a></li>
+                <li><a href="#">체크카드</a></li>
+                <li><a href="#">VIP카드</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">금융/생활편의</a>
+              <ul class="sub">
+                <li><a href="#">금융서비스</a></li>
+                <li><a href="#">생활요금자동납부</a></li>
+                <li><a href="#">생활/편의</a></li>
+                <li><a href="#">결제알림</a></li>
+                <li><a href="#">결제/안심</a></li>
+              </ul>
+            </li>
+          </ul>
+          <span class="menu_bg"></span>
+          <div class="search_box">
+            <input type="text" />
+          </div>
+          <div class="search_img">
+            <img src="/images/btn_search.gif" alt="" />
+          </div>
+        </div>
+        <span class="line"></span>
+      </div>
+
+      <div class="slider_wrap">
+        <div class="slider_img">
+          <div class="slider">
+            <a href="#">
+              <img src="/images/main_visual1_240625.png" alt=""
+            /></a>
+          </div>
+          <div class="slider">
+            <a href="#">
+              <img src="/images/main_visual1_240307.png" alt=""
+            /></a>
+          </div>
+          <div class="slider">
+            <a href="#">
+              <img src="/images/main_visual3_240328.png" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="in_box">
+        <div class="top_box">
+          <div class="small_box"><a href="#">이용대금명세서</a></div>
+          <div class="small_box">
+            <a href="#"
+              >카드승인내역
+              <p class="txt_sub">(전자영수증)</p></a
+            >
+          </div>
+          <div class="small_box"><a href="#">카드이용한도</a></div>
+          <div class="small_box"><a href="#">포인트/마일리지</a></div>
+        </div>
+
+        <div class="section">
+          <div class="secA box1">
+            <a href="#">
+              <h3>디지털명세서</h3>
+              <p class="desc">
+                빠르고 안전한
+                <br />
+                명세서 수신이 필요할 때
+              </p>
+            </a>
+          </div>
+          <div class="secA box2">
+            <a href="#">
+              <h3>단기카드대출</h3>
+              <p class="desc">
+                언제 어디서나
+                <br />
+                현금이 필요할 때
+              </p>
+            </a>
+          </div>
+          <div class="secA box2">
+            <a href="#">
+              <h3>Light 할부</h3>
+              <p class="desc">
+                할부 수수료가
+                <br />
+                부담스러울 때
+              </p>
+            </a>
+          </div>
+          <div class="secA box3">
+            <a href="#">
+              <h3>아파트 관리비 자동납부</h3>
+              <p class="desc">
+                잊기 쉬운 생활요금을
+                <br />
+                자동납부로 편리하게
+              </p>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="in_box2">
+        <div class="secB">
+          <div class="box">
+            <div class="box2">
+              <h3>자주찾는메뉴</h3>
+              <ul class="service">
+                <li>
+                  <span><a href="">결제예정금액</a></span>
+                </li>
+                <li>
+                  <span><a href="">카드발급상황조회</a></span>
+                </li>
+                <li>
+                  <span><a href="">카드분실신고</a></span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="secslider">
+              <ul class="slides">
+                <li class="visual1">
+                  <a href="#"></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="secslider">
+              <ul class="slides">
+                <li class="visual2">
+                  <a href="#"></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="appsns">
+            <ul class="app">
+              <li><a href="#">About BC</a></li>
+              <li><a href="#">VIP</a></li>
+              <li><a href="#">기업</a></li>
+              <li><a href="#">가맹점</a></li>
+              <li><a href="#">페이북</a></li>
+              <li class="bigdata"><a href="#">빅데이터</a></li>
+            </ul>
+            <ul class="sns">
+              <li>
+                <a href="#"><img src="/images/ico_facebook.gif" alt="" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="/images/ico_instagram.gif" alt="" /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="secC">
+          <div class="box2">
+            <h3>
+              <a href="#">공지사항</a>
+            </h3>
+            <div class="newsslider">
+              <ul class="slides">
+                <li>
+                  <a href="#" class="textBlock"
+                    >소득공제 확인서 변경사항 안내<span class="date"
+                      >2024.07.09</span
+                    ></a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="textBlock"
+                    >비씨카드 LG페이 서비스 종료 안내<span class="date"
+                      >2024.06.28</span
+                    ></a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="textBlock"
+                    >국민행복카드 정부 전자바우쳐시스템<span class="date"
+                      >2024.06.07</span
+                    ></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="secD">
+          <div class="box3 bg1">
+            <h3><a href="#">전자민원접수</a></h3>
+          </div>
+          <div class="box3 bg3">
+            <h3><a href="#">금융소비자 보호포털</a></h3>
+          </div>
+          <div class="box4">
+            <h3><a href="#">페이북</a></h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      //sub menu slide, bg slide
+      $(document).ready(function () {
+        $(".gnb").hover(function () {
+          $(".sub li").stop().slideToggle();
+          $(".menu_bg").stop().slideToggle();
+        });
+      });
+
+      
+    </script>
+
+    <script src="/js/main.js"></script>
+    <script src="/js/banner.js"></script>
+  </body>
 </html>

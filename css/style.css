@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  color: inherit;
+}
+
+html,
+body {
+  height: 100%;
+}
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+form,
+fieldset,
+p,
+button {
+  margin: 0;
+  padding: 0;
+}
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+p,
+th,
+td {
+  font-family: "RixGoM";
+}
+body {
+  font-size: 14px;
+  line-height: 22px;
+  font-family: "RixGoM";
+  color: #555555;
+  background-color: #fff;
+}
+
+/*  line */
+
+.line {
+  display: block;
+  width: 1920px;
+  height: 1px;
+  border-top: 1px solid #d9d9d9;
+}
