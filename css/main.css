@@ -445,7 +445,7 @@
 
 .secC .box2 {
   width: 270px;
-  height: 108px;
+  height: 130px;
   border: 1px solid #cacaca;
   padding: 20px 24px 0;
 }
@@ -538,7 +538,8 @@
   height: 130px;
   border: 1px solid #cacaca;
   text-align: center;
-  margin-top: 10px;
+  margin-top: 7px;
+  margin-bottom: 3px;
   box-sizing: border-box;
 }
 
@@ -554,7 +555,203 @@
   float: left;
   width: 270px;
   margin-top: 10px;
-  padding: 22px 0 23px 0;
+  padding: 21px 0;
   border: 1px solid #cacaca;
   text-align: center;
+}
+
+
+/* footer */
+
+
+
+.footer {
+  width: 100%;
+  min-width: 1110px;
+  background: url(/images/bg_footer.png) left top repeat-x;
+}
+
+.footernotice {
+  width: 1110px;
+  height: 36px;
+  padding: 20px 0;
+  margin: 0 auto;
+  margin-top: 450px;
+  position: relative;
+}
+
+
+.footer ul.notice1 {
+  width: 100%;
+}
+
+.footer ul.notice1 li {
+  padding: 0 7px;
+  float: left;
+  font-family: "RixGoL";
+  font-size: 12px;
+  line-height: 16px;
+  color: #666;
+  background: url(/images/bg_bar.png) left top no-repeat;
+}
+
+.footer ul.notice1 li:first-child {
+  padding-left: 0;
+  background: none;
+}
+
+.footer ul.notice1 li a:hover {
+  text-decoration: none;
+}
+
+.footer ul.notice1 li span {
+  font-family: "RixGoL";
+  font-weight: normal;
+  font-family: "RixGoEB";
+  letter-spacing: -1px;
+}
+
+.mt5 {
+  margin-top: 25px;
+}
+
+.footernotice .btncenter {
+  position: relative;
+  position: absolute;
+  top: 23px;
+  right: 180px;
+}
+
+.footernotice .btncenter a {
+  font-family: "RixGoL";
+  color: #666;
+  font-size: 12px;
+}
+
+.footernotice .btncenter>a {
+  width: 160px;
+  height: 30px;
+  padding-left: 10px;
+  line-height: 30px;
+  background: url(/images/bg_select.png) left top no-repeat;
+  display: block;
+}
+
+.footernotice .btncenter ul {
+  padding: 2px 0 5px;
+  border: 1px solid #ccc;
+  border-bottom: 0;
+  position: absolute;
+  bottom: 29px;
+  left: 0;
+  background: url(/images/bg_footer2.png) right bottom no-repeat;
+  z-index: 100;
+  display: none;
+}
+
+.footernotice .btncenter ul li a {
+  width: 138px;
+  height: 21px;
+  padding: 0 10px;
+  margin-top: 3px;
+  line-height: 21px;
+  display: block;
+}
+
+.footernotice .btnfamily {
+  position: relative;
+  position: absolute;
+  top: 23px;
+  right: 10px;
+}
+
+.footernotice .btnfamily>a {
+  width: 160px;
+  height: 30px;
+  padding-left: 10px;
+  font-family: "RixGoL";
+  color: #666;
+  font-size: 12px;
+  line-height: 30px;
+  background: url(/images/bg_select.png) left top no-repeat;
+  display: block;
+}
+
+.footernotice .contentfamily {
+  width: 928px;
+  padding: 15px 15px 14px;
+  border: 1px solid #ccc;
+  border-bottom: 0;
+  position: absolute;
+  bottom: 29px;
+  right: 0;
+  background: #fff url(/images/bg_footer2.png) right bottom no-repeat;
+  clear: both;
+  overflow: hidden;
+  z-index: 200;
+  display: none;
+}
+
+.footernotice .contentfamily a {
+  padding-left: 10px;
+  font-family: "RixGoL";
+  font-size: 12px;
+  line-height: 20px;
+  color: #545454;
+  display: block;
+  background: url(/images/icon_bullet.png) left center no-repeat;
+}
+
+.fl {
+  float: left;
+}
+
+.footernotice .contentfamily .titlefamily {
+  padding-bottom: 15px;
+  font-family: "RixGoL";
+  font-size: 16px;
+  color: #e83d44;
+}
+
+.footernotice .contentfamily .subfamily {
+  min-height: 245px;
+  padding: 0 15px;
+  border-left: 1px solid #ccc;
+}
+
+
+.footernotice .contentfamily .subfamily:first-child {
+  padding-left: 0;
+  border-left: 0;
+}
+
+.footerpersonal {
+  width: 1110px;
+  height: 55px;
+  margin: 15px auto 50px;
+  position: relative;
+  margin-top: 50px;
+}
+
+.footerpersonal strong {
+  color: #242424;
+}
+
+.footerpersonal .footermark {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.footerpersonal .footermark p {
+  margin-left: 10px;
+  float: left;
+}
+
+.footerpersonal ul {
+  margin-top: 5px;
+}
+
+.footerpersonal .notice1.p2 {
+  float: left;
 }
