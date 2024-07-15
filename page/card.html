@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>카드상품</title>
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/fonts/font.css" />
+    <link rel="stylesheet" href="/css/card.css" />
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- header -->
+      <div class="header_container"></div>
+
+      <!-- sub main -->
+      <div class="cards_main">
+        <div class="location">
+          <ul>
+            <li class="home">
+              <a href="/page/main.html">
+                <img src="/images/ico_home.gif" alt="" />
+              </a>
+            </li>
+            <li class="last">
+              <a href="/page/card.html">카드상품</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="container" class="cards_submain">
+        <h2>카드상품 한눈에 보기</h2>
+        <div id="subvisual">
+          <div class="subvisualwrap">
+            <div class="visualslider">
+              <ul class="slides">
+                <li class="visual1"></li>
+                <li class="visual2"></li>
+                <li class="visual3"></li>
+              </ul>
+            </div>
+          </div>
+          <ul class="tabslider">
+            <li>
+              <a href="#">온라인에서도, 오프라인에서도! BC 바로 On&Off 카드</a>
+            </li>
+            <li>
+              <a href="#">할인을 조아하는 당신을 위한 카드 할인조아(NH농협)</a>
+            </li>
+            <li>
+              <a href="#">롯데가맹점에서 누리는 혜택 L.pay 체크카드(하나)</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="reco_card">
+        <h3>추천카드</h3>
+        <div class="reco_card_btn">
+          <button class="btn-prev">이전</button>
+          <button class="btn-next">다음</button>
+          <button class="btn-stop">멈춤</button>
+        </div>
+
+        <div class="cardslide">
+          <ul class="slide2">
+            <li>
+              <a href="#">
+                <div class="thumb">
+                  <img src="/images/card_1016810000.png" alt="" />
+                </div>
+                <p class="tit">[BC바로] 페이북 머니 체크카드</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="thumb">
+                  <img src="/images/card_1000026779.png" alt="" />
+                </div>
+                <p class="tit">[NH농협] KT수퍼할부카드</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="thumb">
+                  <img src="/images/card_1000022038.png" alt="" />
+                </div>
+                <p class="tit">[BNK경남] 플러스알파카드(할인형)</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="thumb">
+                  <img src="/images/card_1000026636.png" alt="" />
+                </div>
+                <p class="tit">[DGB대구] 세븐캐쉬백카드</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="thumb">
+                  <img src="/images/card_1000026087.png" alt="" />
+                </div>
+                <p class="tit">[BNK부산] BNK 프렌즈 신용카드</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <div class="footer_container"></div>
+    </div>
+
+    <script>
+      // slide2 script 방식
+      // $(document).ready(function () {
+      //   var nowNum = 0;
+      //   var bannerObj = $('.slidess li');
+      //   var maxLength = bannerObj.length;
+      //   var timer = 4000; // 자동 롤링되는 타임 설정
+      //   var autoRun = setInterval(function () { rollingFn('left'); }, timer);
+      //   bannerObj.eq(nowNum).fadeIn();
+      //   // $('.nextBtn').bind('click', function () {
+      //   //   rollingFn('right');
+      //   // });
+      //   // $('.prevBtn').bind('click', function () {
+      //   //   rollingFn('left');
+      //   // });
+
+      //   function rollingFn(direction) {
+      //     if (direction == 'left') {
+      //       nowNum = nowNum + 1;
+      //       if (nowNum > maxLength - 1) {
+      //         nowNum = 0;
+      //       }
+      //     } else {
+      //       nowNum = nowNum - 1;
+      //       if (nowNum < 0) {
+      //         nowNum = maxLength - 1;
+      //       }
+      //     }
+      //     bannerObj.hide().eq(nowNum).fadeIn();
+      //   }
+      // });
+    </script>
+
+    <script>
+      $(function () {
+        $(".header_container").load("../inc/header.html");
+        $(".footer_container").load("../inc/footer.html");
+      });
+    </script>
+
+    <script src="/js/main.js"></script>
+    <script src="/js/banner.js"></script>
+    <script src="/js/footer.js"></script>
+  </body>
+</html>

@@ -1,0 +1,81 @@
+<div class="header">
+  <div class="top">
+    <div class="logo">
+      <a href=""><img src="/images/h1_logo_individual.gif" alt="" /></a>
+    </div>
+    <ul class="top_menu">
+      <li><a href="#" class="top_bar">가맹점</a></li>
+      <li><a href="#">기업</a></li>
+      <li><a href="#">VIP</a></li>
+    </ul>
+    <ul class="login_menu">
+      <li><a href="#" class="log_col">로그인</a></li>
+      <li><a href="#">회원가입</a></li>
+      <li><a href="#">공동(공인)인증센터</a></li>
+      <li><a href="#">상품공시실</a></li>
+      <li><a href="#">고객센터</a></li>
+      <li><a href="#">전체보기</a></li>
+    </ul>
+  </div>
+  <span class="line"></span>
+  <div class="bottom">
+    <ul class="gnb">
+      <li>
+        <a href="#" class="bottom_my">마이BC</a>
+        <ul class="sub">
+          <li><a href="#">한눈에보기</a></li>
+          <li><a href="#">카드이용조회</a></li>
+          <li><a href="#">카드정보</a></li>
+          <li><a href="#">나의정보관리</a></li>
+          <li><a href="#">가족카드이용조회</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">이벤트/혜택</a>
+        <ul class="sub">
+          <li><a href="#">이벤트</a></li>
+          <li><a href="#">혜택</a></li>
+          <li><a href="#">포인트/마일리지</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="/page/card.html">카드상품</a>
+        <ul class="sub">
+          <li><a href="#">카드발급신청/조회</a></li>
+          <li><a href="#">맞춤카드찾기</a></li>
+          <li><a href="#">신용카드</a></li>
+          <li><a href="#">체크카드</a></li>
+          <li><a href="#">VIP카드</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">금융/생활편의</a>
+        <ul class="sub">
+          <li><a href="#">금융서비스</a></li>
+          <li><a href="#">생활요금자동납부</a></li>
+          <li><a href="#">생활/편의</a></li>
+          <li><a href="#">결제알림</a></li>
+          <li><a href="#">결제/안심</a></li>
+        </ul>
+      </li>
+    </ul>
+    <span class="menu_bg"></span>
+    <div class="search_box">
+      <input type="text" />
+    </div>
+    <div class="search_img">
+      <img src="/images/btn_search.gif" alt="" />
+    </div>
+  </div>
+  <span class="line"></span>
+</div>
+
+<script>
+  //sub menu slide, bg slide
+  $(document).ready(function () {
+    $(".gnb").hover(function () {
+      $(".sub li").stop().slideToggle();
+      $(".menu_bg").stop().slideToggle();
+    });
+  });
+</script>

@@ -1,0 +1,160 @@
+.cards_main .location {
+  position: relative;
+  width: 1110px;
+  height: 28px;
+  margin: 0 auto;
+}
+
+.cards_main .location ul {
+  position: absolute;
+  top: 45px;
+  right: 0;
+}
+
+.cards_main .location ul li {
+  float: left;
+  background: url(/images/ic_path.gif) no-repeat left top;
+  padding: 0 5px 0 12px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #555555;
+}
+
+.cards_main .location ul .home {
+  background: none;
+  padding: 0 5px 0 0;
+}
+
+.cards_main .location ul .home a {
+  text-decoration: none;
+}
+
+.cards_main .location li.home a img {
+  vertical-align: top;
+}
+
+.cards_main .location ul .last {
+  padding-right: 0;
+  font-weight: normal;
+  font-family: "RixGoEB";
+  line-height: 12px;
+}
+
+.cards_submain {
+  width: 1110px;
+  margin: 45px auto 100px;
+  position: relative;
+  padding: 0 10px;
+}
+
+.cards_submain h2 {
+  font-size: 30px;
+  font-family: "RixGoB";
+  font-weight: normal;
+  line-height: 30px;
+  color: #000;
+  text-align: center;
+}
+
+#subvisual {
+  margin-top: 30px;
+}
+
+#subvisual .subvisualwrap {
+  margin: 0 auto;
+}
+
+#subvisual .visualslider {
+  width: 1110px;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+}
+
+.visualslider .slides .visual1 {
+  background: url(/images/card_visual1_230801.png) 0px 0px no-repeat;
+  width: 100%;
+  float: left;
+  margin-right: -100%;
+  position: relative;
+  opacity: 1;
+  display: block;
+  z-index: 2;
+}
+
+.visualslider .slides .visual2 {
+  background: url(/images/card_visual2_200110.jpg) 0px 0px no-repeat;
+  width: 100%;
+  float: left;
+  margin-right: -100%;
+  position: relative;
+  opacity: 0;
+  display: block;
+  z-index: 1;
+}
+
+.visualslider .slides .visual3 {
+  background: url(/images/card_visual3_200110.jpg) 0px 0px no-repeat;
+  width: 100%;
+  float: left;
+  margin-right: -100%;
+  position: relative;
+  opacity: 0;
+  display: block;
+  z-index: 1;
+}
+
+.visualslider .slides > li {
+  width: 1110px;
+  height: 300px;
+}
+
+#subvisual .tabslider {
+  width: 1110px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+#subvisual .tabslider > li {
+  float: left;
+  width: 370px;
+  height: 57px;
+  border-bottom: 1px solid #cacaca;
+  display: block;
+  text-align: center;
+  line-height: 56px;
+  font-family: "RixGoB";
+  font-weight: normal;
+  font-size: 14px;
+  color: #000;
+}
+
+#subvisual .tabslider > li a {
+  display: block;
+  height: 57px;
+}
+
+#subvisual .tabslider > li.on a {
+  background: url("/images/bg_roll_3px.gif") repeat-x 0 bottom;
+}
+
+.reco_card {
+  margin-top: 70px;
+  position: relative;
+}
+
+.reco_card h3 {
+  height: 42px;
+  border-bottom: 1px solid #000000;
+  font-family: "RixGoB";
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 22px;
+  color: #000;
+}
+
+.reco_card .cardslide {
+  position: absolute;
+  right: 0;
+  top: -13px;
+}
