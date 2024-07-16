@@ -1,0 +1,10 @@
+.cards_main .location ul .last {
+  padding-right: 0;
+  font-weight: normal;
+  font-family: "RixGoEB";
+  line-height: 16px;
+}
+
+.cards_main .location li.home a img {
+  vertical-align: top;
+}

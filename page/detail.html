@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>카드상품 상세보기</title>
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/fonts/font.css" />
+    <link rel="stylesheet" href="/css/card.css" />
+    <link rel="stylesheet" href="/css/detail.css" />
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- header -->
+      <div class="header_container"></div>
+
+      <!-- sub main -->
+      <div class="cards_main">
+        <div class="location">
+          <ul>
+            <li class="home">
+              <a href="/page/main.html">
+                <img src="/images/ico_home.gif" alt="" />
+              </a>
+            </li>
+            <li>
+              <a href="/page/card.html">카드상품</a>
+            </li>
+            <li class="last">
+              <a href="/page/detail.html">상세보기</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="lnb">
+        <h1>
+          <img src="/images/h1_card.gif" alt="" />
+        </h1>
+        <ul class="lnb_main">
+          <li class="lnb_f">
+            <a href="#">카드발급신청/조회</a>
+            <ul class="lnb_sub">
+              <li class="sub_d">
+                <a href="#">카드신청현황조회</a>
+              </li>
+              <li class="sub_d">
+                <a href="#">카드발급상황조회</a>
+              </li>
+            </ul>
+          </li>
+          <li class="lnb_d">
+            <a href="#">맞춤카드찾기</a>
+          </li>
+          <li class="lnb_d">
+            <a href="#">맞춤카드찾기</a>
+          </li>
+          <li class="lnb_d">
+            <a href="#">신용카드</a>
+          </li>
+          <li class="lnb_d">
+            <a href="#">체크카드</a>
+          </li>
+          <li class="lnb_d">
+            <a href="#">VIP 카드</a>
+          </li>
+          <li class="lnb_d">
+            <a href="#">선불카드</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- footer -->
+      <div class="footer_container"></div>
+    </div>
+
+    <script>
+      $(function () {
+        $(".header_container").load("../inc/header.html");
+        $(".footer_container").load("../inc/footer.html");
+      });
+    </script>
+
+    <script src="/js/main.js"></script>
+    <script src="/js/banner.js"></script>
+    <script src="/js/footer.js"></script>
+    <script src="/js/card.js"></script>
+  </body>
+</html>
