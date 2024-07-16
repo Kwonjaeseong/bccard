@@ -11,6 +11,11 @@
     <link rel="stylesheet" href="/css/card.css" />
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <script
+      src="http://stephenpontes.com/misc/permanent/jquery.flexslider-min.js"
+      type="text/javascript"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.js"></script>
   </head>
 
   <body>
@@ -59,7 +64,7 @@
           </ul>
         </div>
       </div>
-
+      <!-- reco card -->
       <div class="reco_card">
         <h3>추천카드</h3>
         <div class="reco_card_btn">
@@ -67,50 +72,57 @@
           <button class="btn-next">다음</button>
           <button class="btn-stop">멈춤</button>
         </div>
-
-        <div class="cardslide">
-          <ul class="slide2">
-            <li>
-              <a href="#">
-                <div class="thumb">
-                  <img src="/images/card_1016810000.png" alt="" />
-                </div>
-                <p class="tit">[BC바로] 페이북 머니 체크카드</p>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <div class="thumb">
-                  <img src="/images/card_1000026779.png" alt="" />
-                </div>
-                <p class="tit">[NH농협] KT수퍼할부카드</p>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <div class="thumb">
-                  <img src="/images/card_1000022038.png" alt="" />
-                </div>
-                <p class="tit">[BNK경남] 플러스알파카드(할인형)</p>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <div class="thumb">
-                  <img src="/images/card_1000026636.png" alt="" />
-                </div>
-                <p class="tit">[DGB대구] 세븐캐쉬백카드</p>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <div class="thumb">
-                  <img src="/images/card_1000026087.png" alt="" />
-                </div>
-                <p class="tit">[BNK부산] BNK 프렌즈 신용카드</p>
-              </a>
-            </li>
-          </ul>
+        <div class="cardinfo">
+          <div class="cardslide">
+            <ul class="slide2">
+              <li>
+                <a href="#">
+                  <div class="thumb">
+                    <img src="/images/card_1016810000.png" alt="" />
+                  </div>
+                  <p class="tit">[BC바로] 페이북 머니 체크카드</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="thumb">
+                    <img src="/images/card_1000026779.png" alt="" />
+                  </div>
+                  <p class="tit">[NH농협] KT수퍼할부카드</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="thumb">
+                    <img src="/images/card_1000022038.png" alt="" />
+                  </div>
+                  <p class="tit">[BNK경남] 플러스알파카드(할인형)</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="thumb">
+                    <img src="/images/card_1000026636.png" alt="" />
+                  </div>
+                  <p class="tit">[DGB대구] 세븐캐쉬백카드</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="thumb">
+                    <img src="/images/card_1000026087.png" alt="" />
+                  </div>
+                  <p class="tit">[BNK부산] BNK 프렌즈 신용카드</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="bx-controls">
+            <div class="bx-controls-direction">
+              <a href="bx-prev">Prev</a>
+              <a href="bx-next">Next</a>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -161,5 +173,6 @@
     <script src="/js/main.js"></script>
     <script src="/js/banner.js"></script>
     <script src="/js/footer.js"></script>
+    <script src="/js/card.js"></script>
   </body>
 </html>

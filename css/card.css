@@ -88,7 +88,7 @@
   float: left;
   margin-right: -100%;
   position: relative;
-  opacity: 0;
+  opacity: 1;
   display: block;
   z-index: 1;
 }
@@ -99,11 +99,10 @@
   float: left;
   margin-right: -100%;
   position: relative;
-  opacity: 0;
+  opacity: 1;
   display: block;
   z-index: 1;
 }
-
 .visualslider .slides > li {
   width: 1110px;
   height: 300px;
@@ -138,9 +137,63 @@
   background: url("/images/bg_roll_3px.gif") repeat-x 0 bottom;
 }
 
+/* reco card */
+
 .reco_card {
   margin-top: 70px;
   position: relative;
+  zoom: 1;
+  width: 1110px;
+  display: block;
+  margin: 0 auto;
+}
+
+.reco_card::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.reco_card_btn {
+  zoom: 1;
+  position: absolute;
+  right: 0;
+  top: -14px;
+}
+
+.reco_card .btn-prev,
+.btn-next,
+.btn-stop {
+  display: block;
+  float: left;
+  width: 55px;
+  height: 55px;
+  margin-left: 5px;
+  text-indent: -9999px;
+  background: #f6f6f6 url("/images/ico_card_control.png") no-repeat 0 0;
+  border: none;
+}
+
+.reco_card_btn .btn-next {
+  background-position: 20px -44px;
+}
+
+.reco_card_btn .btn-prev {
+  background-position: 20px 16px;
+}
+
+.reco_card_btn .btn-stop {
+  background-position: 22px -104px;
+}
+
+.reco_card_btn .btn-stop.on {
+  background-position: 22px -164px;
+}
+
+.reco_card_btn::after {
+  display: block;
+  content: "";
+  clear: both;
 }
 
 .reco_card h3 {
@@ -153,8 +206,72 @@
   color: #000;
 }
 
-.reco_card .cardslide {
+.cardinfo {
+  float: left;
+  position: relative;
+  width: auto;
+  margin-left: -30px;
+  margin: 30px auto 0;
+}
+
+/* .cardinfo::before {
+  display: block;
+  content: "";
   position: absolute;
-  right: 0;
-  top: -13px;
+  left: 0;
+  top: 0;
+  z-index: 30;
+  width: 30px;
+  height: 100%;
+  background-color: #fff;
+} */
+
+.cardslide {
+  width: 1140px;
+  margin-left: -30px;
+}
+
+.cardslide .slide2 {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  height: 210px;
+  display: flex;
+  gap: 29px;
+}
+
+.cardinfo .slide2 .thumb img {
+  width: 255px;
+  height: 160px;
+}
+
+.slide2 li {
+  float: left;
+  width: 255px;
+  padding-left: 30px;
+  /* gap: 30px; */
+}
+
+.slide2 li a {
+  display: block;
+}
+
+.slide2 > li .tit {
+  width: 255px;
+  height: 25px;
+  margin-top: 15px;
+  font-family: "RixGoB";
+  font-weight: normal;
+  font-size: 16px;
+  color: #000;
+  line-height: 25px;
+  word-break: keep-all;
+}
+
+.bx-controls {
+  display: none;
+}
+
+.footer {
+  margin-top: -350px;
 }
