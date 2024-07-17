@@ -77,3 +77,54 @@
     url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.otf)
       format("opentype");
 }
+
+@font-face {
+  font-family: "Gmarket Sans";
+  font-weight: 700;
+  src: local("Gmarket Sans Bold"), local("GmarketSans-Bold"),
+    url("/fonts/GmarketSansTTFBold.ttf") format("woff2"),
+    url("/fonts/GmarketSansTTFBold.ttf") format("woff");
+}
+
+@font-face {
+  font-family: "Gmarket Sans";
+  font-weight: 500;
+  src: local("Gmarket Sans Medium"), local("GmarketSans-Medium"),
+    url("/fonts/GmarketSansTTFMedium.ttf") format("woff2"),
+    url("/fonts/GmarketSansTTFMedium.ttf") format("woff");
+}
+
+@font-face {
+  font-family: "Gmarket Sans";
+  font-weight: 300;
+  src: local("Gmarket Sans Light"), local("GmarketSans-Light"),
+    url("/fonts/GmarketSansTTFLight.ttf") format("woff2"),
+    url("/fonts/GmarketSansTTFLight.ttf") format("woff");
+}
+
+@font-face {
+  font-family: "Spoqa Han Sans";
+  font-weight: 700;
+  src: local("Spoqa Han Sans Bold"),
+    url("/fonts/Spoqa\ Han\ Sans\ Bold.ttf") format("woff2"),
+    url("/fonts/Spoqa\ Han\ Sans\ Bold.ttf") format("woff"),
+    url("/fonts/Spoqa\ Han\ Sans\ Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Spoqa Han Sans";
+  font-weight: 400;
+  src: local("Spoqa Han Sans Regular"),
+    url("/fonts/Spoqa\ Han\ Sans\ Regular.ttf") format("woff2"),
+    url("/fonts/Spoqa\ Han\ Sans\ Regular.ttf") format("woff"),
+    url("/fonts/Spoqa\ Han\ Sans\ Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Spoqa Han Sans";
+  font-weight: 100;
+  src: local("Spoqa Han Sans Thin"),
+    url("/fonts/Spoqa\ Han\ Sans\ Thin.ttf") format("woff2"),
+    url("/fonts/Spoqa\ Han\ Sans\ Thin.ttf") format("woff"),
+    url("/fonts/Spoqa\ Han\ Sans\ Thin.ttf") format("truetype");
+}
