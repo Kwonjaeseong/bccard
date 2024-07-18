@@ -31,7 +31,7 @@ button {
   margin: 0;
   padding: 0;
 }
-body,
+/* body,
 div,
 dl,
 dt,
@@ -50,7 +50,7 @@ fieldset,
 p,
 th,
 td {
-  font-family: "RixGoM";
+  font-family: "RixGoM"; */
 }
 body {
   font-size: 14px;

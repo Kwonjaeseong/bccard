@@ -227,6 +227,7 @@
                 </div>
               </div>
             </div>
+            <!-- more view -->
             <div class="cardmodal">
               <div class="annualfeewrap">
                 <p class="tit">연회비</p>
@@ -251,11 +252,90 @@
                   </div>
                 </div>
               </div>
-              <div class="cardotalitem">
+              <div class="cardspitem">
                 <div class="tit">
                   서비스 제공 조건
-                  <div class="trigger"></div>
+                  <div class="trigger">
+                    <span class="close_btn"><a href="#close">닫기</a></span>
+                    <span class="more_btn"><a href="#more">열기</a></span>
+                  </div>
                 </div>
+                <div class="sp_view">
+                  <ul class="txt_list">
+                    <li>
+                      모든 서비스는 비씨카드에 등록된 업종 및 가맹점 기준을
+                      따릅니다.
+                    </li>
+                    <li>
+                      <span class="em">
+                        적립 제외 대상은 아래와 같습니다.
+                        <br />
+                        제세공과금(건강보험/국민연금/고용보험/산재보험,
+                        장애인고용부담금, 국세/지방세/관세, 전기요금, 우편요금,
+                        도시가스요금, 상하수도요금, 여권발급비용, 과태료,
+                        범칙금, 벌금, 국가·공공기관·공공단체에서 개설한 가맹점
+                        이용금액), 초·중·고등학교 학교납입금, 대학등록금,
+                        아파트관리비, 기프트/선불카드(포인트, 사이버머니, 페이북
+                        교통 등 전자지급수단 포함) 구매 및 충전, 상품권 구매,
+                        SMS 이용수수료
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="carddgitem">
+                <div class="tit">
+                  발급 시 유의사항
+                  <div class="trigger">
+                    <span class="close_btn"><a href="#close">닫기</a></span>
+                    <span class="more_btn"><a href="#more">열기</a></span>
+                  </div>
+                </div>
+                <div class="dg_view">
+                  <div class="dgtxt_in">
+                    <p class="dg_tit">
+                      <strong>부가서비스 변경 안내</strong>
+                    </p>
+                    <ul>
+                      <li>
+                        카드 이용 시 제공되는 할인혜택 등의 부가서비스는 카드
+                        신규 출시(2022년 4월 26일) 이후 3년 이상 축소·폐지 없이
+                        유지됩니다.
+                      </li>
+                      <li>
+                        상기에도 불구하고, 다음과 같은 사유가 발생한 경우
+                        카드사는 부가서비스를 변경할 수 있습니다.
+                        <ol>
+                          <li>
+                            ① 카드사의 휴업·파산·경영상의 위기 등에 따른
+                            불가피한 경우
+                          </li>
+                          <li>
+                            ①의2. 제휴업체의 휴업·파산·경영상의 위기로 인해
+                            불가피하게 부가서비스를 축소·변경하는 경우로서 다른
+                            제휴업체를 통해 동종의 유사한 부가서비스 제공이
+                            불가한 경우
+                          </li>
+                          <li>
+                            ② 제휴업체가 카드사의 의사에 반하여 해당
+                            부가서비스를 축소하거나 변경 시, 당초 부가서비스에
+                            상응하는 다른 부가서비스를 제공하는 경우
+                          </li>
+                          <li>
+                            ③ 부가서비스를 3년 이상 제공한 상태에서 해당
+                            부가서비스로 인해 상품의 수익성이 현저히 낮아진 경우
+                          </li>
+                        </ol>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="friendshare">
+                <div class="tit">친구에게 알려주세요 👋</div>
+                <a href="#">
+                  <img src="/images/ic_share_url.png" alt="" />
+                </a>
               </div>
             </div>
           </div>
@@ -270,6 +350,44 @@
       $(function () {
         $(".header_container").load("../inc/header.html");
         $(".footer_container").load("../inc/footer.html");
+      });
+
+      // view open & close
+
+      $(".read .item .tit, .read .item .trigger").click(function () {
+        if ($(this).parent().find(".view").css("display") == "block") {
+          $(this).parent().find(".view").hide();
+          $(this).parent().find(".more_btn").css("display", "block");
+          $(this).parent().find(".close_btn").css("display", "none");
+        } else {
+          $(this).parent().find(".view").show();
+          $(this).parent().find(".close_btn").css("display", "block");
+          $(this).parent().find(".more_btn").css("display", "none");
+        }
+      });
+
+      $(".cardspitem .tit").click(function () {
+        if ($(this).parent().find(".sp_view").css("display") == "block") {
+          $(this).parent().find(".sp_view").hide();
+          $(this).parent().find(".more_btn").css("display", "block");
+          $(this).parent().find(".close_btn").css("display", "none");
+        } else {
+          $(this).parent().find(".sp_view").show();
+          $(this).parent().find(".close_btn").css("display", "block");
+          $(this).parent().find(".more_btn").css("display", "none");
+        }
+      });
+
+      $(".carddgitem .tit").click(function () {
+        if ($(this).parent().find(".dg_view").css("display") == "block") {
+          $(this).parent().find(".dg_view").hide();
+          $(this).parent().find(".more_btn").css("display", "block");
+          $(this).parent().find(".close_btn").css("display", "none");
+        } else {
+          $(this).parent().find(".dg_view").show();
+          $(this).parent().find(".close_btn").css("display", "block");
+          $(this).parent().find(".more_btn").css("display", "none");
+        }
       });
     </script>
 

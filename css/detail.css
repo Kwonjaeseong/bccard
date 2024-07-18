@@ -60,9 +60,7 @@
   background: url(/images/bg_lnb_off1.gif) no-repeat 219px 17px;
 }
 
-.lnb_main .lnb_f > a:link,
 .lnb_main .lnb_f > a:active,
-.lnb_main .lnb_f > a:visited,
 .lnb_main .lnb_f > a:hover,
 .lnb_main .lnb_f > a:focus {
   background: url("/images/bg_lnb_on1.gif") no-repeat 219px 22px;
@@ -214,7 +212,6 @@
   position: relative;
   z-index: 2;
   width: 100%;
-  padding: 0 12px 0 106px;
   cursor: pointer;
 }
 
@@ -304,7 +301,9 @@
   margin-bottom: 10px;
 }
 
-.view .txt_list li::marker {
+.view .txt_list li::marker,
+.sp_view .txt_list li::marker,
+.dgtxt_in ul > li::marker {
   font-size: 0.5em;
 }
 /* table */
@@ -352,8 +351,240 @@ th {
   border-left: 1px solid #e9ecef;
   font-size: 15px;
 }
+
+/* more view */
+.cardmodal {
+  padding: 60px 28px 0;
+  background: #f9fafc;
+  font-family: "Spoqa Han Sans";
+}
+
+.annualfeewrap {
+  margin-bottom: 70px;
+}
+
+.annualfeewrap .tit {
+  margin-bottom: 22px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.annualfeewrap .annualfeebox {
+  width: 100%;
+  padding: 24px 74px;
+  border-radius: 18px;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+.annualfeebox .annual {
+  position: relative;
+}
+
+.annualfeebox .type {
+  display: inline-block;
+  width: 100px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.annualfeebox .fee {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.annualfeebox .brand {
+  display: inline-block;
+}
+
+.annualfeebox .brand .ic {
+  display: inline-block;
+  position: relative;
+  padding-left: 28px;
+  font-size: 15px;
+  line-height: 22px;
+  background-size: 24px auto;
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+}
+
+.annualfeebox .brand .ic.bc {
+  background-image: url(/images/ic_brand_bc.png);
+}
+
+.annualfeebox .ps {
+  margin-top: 13px;
+  font-size: 0.95rem;
+}
+
+/* card supply item */
+.cardspitem {
+  margin: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  background: #f9fafc;
+}
+.cardspitem .tit {
+  padding: 0;
+  border-bottom: none;
+  font-size: 20px;
+  line-height: 80px;
+  color: #000;
+  font-weight: 700;
+}
+
+.cardspitem .tit .trigger {
+  z-index: 1;
+  position: absolute;
+  top: 24px;
+  right: 13px;
+  width: 32px;
+  height: 32px;
+}
+
+.cardspitem .tit .trigger a {
+  position: relative;
+  display: block;
+  width: 32px;
+  height: 32px;
+  font-size: 0;
+  background: url(/images/btn_dropdown_open_pc.png) no-repeat 50% 50%;
+}
+
+.cardspitem .tit .trigger .close_btn {
+  display: none;
+  transform: rotateX(180deg);
+}
+
+.sp_view {
+  padding: 0 0 30px;
+  border-top: none;
+}
+
+.sp_view .txt_list {
+  font-family: "Spoqa Han Sans";
+  font-size: 18px;
+  line-height: 32px;
+  color: #212121;
+}
+
+.sp_view .txt_list li {
+  position: relative;
+  padding-left: 10px;
+  list-style: disc;
+  list-style-position: inside;
+}
+
+.sp_view .txt_list li ~ li {
+  margin-top: 20px;
+}
+
+.sp_view .txt_list li .em {
+  background: #eeff83;
+}
+
+/* card dangerous item */
+.carddgitem {
+  margin: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  background: #f9fafc;
+}
+
+.carddgitem .tit {
+  padding: 0;
+  border-bottom: none;
+  font-size: 20px;
+  line-height: 80px;
+  color: #000;
+  font-weight: 700;
+}
+
+.carddgitem .tit .trigger {
+  z-index: 1;
+  position: absolute;
+  top: 24px;
+  right: 13px;
+  width: 32px;
+  height: 32px;
+}
+
+.carddgitem .tit .trigger a {
+  position: relative;
+  display: block;
+  width: 32px;
+  height: 32px;
+  font-size: 0;
+  background: url(/images/btn_dropdown_open_pc.png) no-repeat 50% 50%;
+}
+
+.carddgitem .tit .trigger .close_btn {
+  display: none;
+  transform: rotateX(180deg);
+}
+
+.dg_view {
+  padding: 0 0 30px;
+  border-top: none;
+}
+
+.dg_view .dgtxt_in {
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+
+.dgtxt_in p {
+  padding-left: 22px;
+  text-indent: -22px;
+}
+
+.dgtxt_in ul li {
+  position: relative;
+  margin: 10px;
+}
+
+.dgtxt_in ul > li {
+  position: relative;
+  padding-left: 10px;
+  list-style: disc;
+  list-style-position: inside;
+}
+
+.dgtxt_in ul > li ~ li {
+  margin-top: 13px;
+}
+
+/* friend */
+.friendshare {
+  display: table;
+  width: 100%;
+  padding: 60px 0;
+}
+
+.friendshare .tit {
+  margin-bottom: 26px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 44px;
+  color: #000;
+}
+
+.friendshare a {
+  display: table-cell;
+  width: 64px;
+  height: 64px;
+  padding: 0 7px;
+  vertical-align: middle;
+}
+
+.friendshare a img {
+  width: 100%;
+}
+
 /* footer */
 
 .footer {
-  margin-top: 2000px;
+  margin-top: 3300px;
 }
