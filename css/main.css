@@ -71,9 +71,10 @@
   align-items: center;
 }
 
-.bottom .gnb {}
+.bottom .gnb {
+}
 
-.bottom .gnb>li {
+.bottom .gnb > li {
   display: inline-block;
   width: 217px;
   height: 71px;
@@ -81,7 +82,7 @@
   position: relative;
 }
 
-.bottom .gnb>li>a {
+.bottom .gnb > li > a {
   display: inline-block;
   height: 71px;
   font-size: 18px;
@@ -90,12 +91,12 @@
   color: #000;
 }
 
-.bottom .gnb>li:hover>a {
+.bottom .gnb > li:hover > a {
   color: #e83d44;
   border-bottom: 3px solid #e83d44;
 }
 
-.bottom .gnb>li>.bottom_my {
+.bottom .gnb > li > .bottom_my {
   /* margin-left: 15px; */
 }
 
@@ -560,10 +561,7 @@
   text-align: center;
 }
 
-
 /* footer */
-
-
 
 .footer {
   width: 100%;
@@ -579,7 +577,6 @@
   margin-top: 450px;
   position: relative;
 }
-
 
 .footer ul.notice1 {
   width: 100%;
@@ -628,12 +625,12 @@
   font-size: 12px;
 }
 
-.footernotice .btncenter>a:hover,
-.footernotice .btncenter>a:active {
+.footernotice .btncenter > a:hover,
+.footernotice .btncenter > a:active {
   text-decoration: none;
 }
 
-.footernotice .btncenter>a {
+.footernotice .btncenter > a {
   width: 160px;
   height: 30px;
   padding-left: 10px;
@@ -642,10 +639,9 @@
   display: block;
 }
 
-.footernotice .btncenter>a:hover {
+.footernotice .btncenter > a:hover {
   background-position: left bottom;
 }
-
 
 .footernotice .btncenter ul {
   padding: 2px 0 5px;
@@ -674,7 +670,6 @@
   text-decoration: none;
 }
 
-
 .footernotice .btnfamily {
   position: relative;
   position: absolute;
@@ -686,7 +681,7 @@
   text-decoration: none;
 }
 
-.footernotice .btnfamily>a {
+.footernotice .btnfamily > a {
   width: 160px;
   height: 30px;
   padding-left: 10px;
@@ -698,10 +693,9 @@
   display: block;
 }
 
-.footernotice .btnfamily>a:hover {
+.footernotice .btnfamily > a:hover {
   background-position: left bottom;
 }
-
 
 .footernotice .contentfamily {
   width: 928px;
@@ -750,7 +744,6 @@
   padding: 0 15px;
   border-left: 1px solid #ccc;
 }
-
 
 .footernotice .contentfamily .subfamily:first-child {
   padding-left: 0;
