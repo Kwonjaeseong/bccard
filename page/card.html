@@ -168,6 +168,19 @@
         $(".header_container").load("../inc/header.html");
         $(".footer_container").load("../inc/footer.html");
       });
+
+      // 링크 가로채기
+      const redirectUrl = "/page/detail.html";
+
+      $("a").on("click", function (event) {
+        // 클릭된 a 태그가 tabslider 안에 있는 경우는 이벤트 방지
+        if ($(this).closest(".tabslider").length > 0) {
+          return; // tabslider 안의 a 태그는 동작하지 않도록 함
+        }
+
+        event.preventDefault(); // 기본 링크 클릭 동작 방지
+        window.location.href = redirectUrl; // 지정한 페이지로 이동
+      });
     </script>
 
     <script src="/js/main.js"></script>

@@ -240,6 +240,14 @@
         $(".header_container").load("../inc/header.html");
         $(".footer_container").load("../inc/footer.html");
       });
+
+      // 링크 가로채기
+      const redirectUrl = "/page/card.html";
+
+      $("a").on("click", function (event) {
+        event.preventDefault(); // 기본 링크 클릭 동작 방지
+        window.location.href = redirectUrl; // 지정한 페이지로 이동
+      });
     </script>
 
     <script src="/js/main.js"></script>
